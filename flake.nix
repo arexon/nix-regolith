@@ -31,7 +31,7 @@
         vendorHash = "sha256-+rr1sueoWER8IuI2bkv/vmIdfXZOydq4RjSHWBLwKsQ=";
 
         patchPhase = ''
-          sed -i 's/unversioned/v${version}/g' main.go
+          sed -i 's/unversioned/${version}/g' main.go
         '';
 
         checkPhase = null;
