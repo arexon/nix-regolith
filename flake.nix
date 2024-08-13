@@ -1,5 +1,5 @@
 {
-  description = "A simple flake to run Regolith, A compiler for Minecraft Bedrock.";
+  description = "A simple flake to run Regolith, a compiler for Minecraft Bedrock.";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
