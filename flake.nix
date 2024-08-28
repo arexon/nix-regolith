@@ -19,7 +19,7 @@
 
       regolith = pkgs.buildGoModule rec {
         pname = "regolith";
-        version = "1.4.0";
+        version = "1.4.1";
 
         src = pkgs.fetchFromGitHub {
           owner = "Bedrock-OSS";
