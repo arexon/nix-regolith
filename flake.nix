@@ -25,7 +25,7 @@
           owner = "Bedrock-OSS";
           repo = pname;
           rev = version;
-          sha256 = "sha256-HZOkUyLBnBk3KOizpADrl6fBLY8mA10AI37rJDloaOs";
+          sha256 = "sha256-1nXyOojfXfcVoTUSwI96C0lJQBJZ9Zo4Ug1gUA3zd3Q=";
         };
 
         vendorHash = "sha256-+rr1sueoWER8IuI2bkv/vmIdfXZOydq4RjSHWBLwKsQ=";
