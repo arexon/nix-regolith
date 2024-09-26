@@ -13,7 +13,6 @@
     ...
   }:
     flake-utils.lib.eachDefaultSystem (system: let
-      lib = nixpkgs.lib;
       pkgs = import nixpkgs {inherit system;};
 
       regolith = pkgs.buildGoModule rec {
@@ -40,7 +39,7 @@
 
       packages = {
         inherit regolith;
-        default = self.packages.${system}.regolith;
+        default = regolith;
       };
     });
 }
