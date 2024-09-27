@@ -17,12 +17,12 @@
 
       regolith = pkgs.buildGoModule rec {
         pname = "regolith";
-        version = "1.4.1";
+        version = "1.5.0";
 
         src = pkgs.fetchFromGitHub {
-          owner = "Bedrock-OSS";
+          owner = "arexon";
           repo = pname;
-          rev = version;
+          rev = "fsnotify-dir-watcher";
           sha256 = "sha256-1nXyOojfXfcVoTUSwI96C0lJQBJZ9Zo4Ug1gUA3zd3Q=";
         };
 
