@@ -23,10 +23,10 @@
           owner = "arexon";
           repo = pname;
           rev = "fsnotify-dir-watcher";
-          sha256 = "sha256-1nXyOojfXfcVoTUSwI96C0lJQBJZ9Zo4Ug1gUA3zd3Q=";
+          sha256 = "sha256-9lXQD5/pqjvos+/ddl9AbVfUNnzZbuYfN7P7qe+Q/dM=";
         };
 
-        vendorHash = "sha256-+rr1sueoWER8IuI2bkv/vmIdfXZOydq4RjSHWBLwKsQ=";
+        vendorHash = "sha256-or0OKi5oM7evulRzG4r/WvhZmFAcM10zJxZaXA3U2I8=";
 
         patchPhase = ''
           sed -i 's/unversioned/${version}/g' main.go
