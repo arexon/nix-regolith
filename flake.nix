@@ -23,16 +23,18 @@
           owner = "arexon";
           repo = pname;
           rev = "fsnotify-dir-watcher";
-          sha256 = "sha256-SKvEb0F4At7A9v/C5XC1XfjaVZ+9ciZGrgMN9R+BYnw=";
+          sha256 = "sha256-7pSVS+HzwL0pJl5z62uZvM/2WZI8hscUReZTuekWb8E=";
         };
 
         vendorHash = "sha256-+4J4Z7lhbAphi6WUEJN9pzNXf6ROUKqN4NdKI2sQSW0=";
 
-        patchPhase = ''
-          sed -i 's/unversioned/${version}/g' main.go
-        '';
-
-        checkPhase = null;
+        doCheck = false;
+        ldflags = [
+          "-X main.buildSource=nix"
+          "-X main.version=${version}"
+          "-X main.commit=${src.rev}"
+          "-X main.date=19700101-00:00:00"
+        ];
       };
     in {
       formatter = pkgs.alejandra;
