@@ -23,7 +23,7 @@
           owner = "arexon";
           repo = pname;
           rev = "fsnotify-dir-watcher";
-          sha256 = "sha256-XJVjt7e1L3FpIPV+YiGCCGysMw7nZJQkFu6193cWPuo=";
+          sha256 = "sha256-DCvnDBtLTx3E1HnfbBcS0uEKRd/t92Rqro5J9T95JPY=";
         };
 
         vendorHash = "sha256-+4J4Z7lhbAphi6WUEJN9pzNXf6ROUKqN4NdKI2sQSW0=";
