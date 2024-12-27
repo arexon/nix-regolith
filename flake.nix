@@ -17,13 +17,13 @@
 
       regolith = pkgs.buildGoModule rec {
         pname = "regolith";
-        version = "1.5.0";
+        version = "1.5.1";
 
         src = pkgs.fetchFromGitHub {
           owner = "Bedrock-OSS";
           repo = pname;
           rev = "main";
-          sha256 = "sha256-DCvnDBtLTx3E1HnfbBcS0uEKRd/t92Rqro5J9T95JPY=";
+          sha256 = "sha256-gTEQ2hu581tD1I/3iLHzE/2nekAG49/M6V6QeqPhYsA=";
         };
 
         vendorHash = "sha256-+4J4Z7lhbAphi6WUEJN9pzNXf6ROUKqN4NdKI2sQSW0=";
@@ -32,7 +32,6 @@
         ldflags = [
           "-X main.buildSource=nix"
           "-X main.version=${version}"
-          "-X main.commit=abd33df9f6022c4ba231bfed50b55f7559ef4612"
           "-X main.date=19700101-00:00:00"
         ];
       };
